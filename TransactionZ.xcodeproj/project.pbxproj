@@ -16,6 +16,12 @@
 		655EAAF1220CBC6100EEC349 /* TransactionZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAAF0220CBC6100EEC349 /* TransactionZUITests.swift */; };
 		655EAB01220CBC9E00EEC349 /* TransactionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */; };
 		655EAB03220CBCB300EEC349 /* TransactionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */; };
+		655EAB06220CBDB500EEC349 /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB05220CBDB500EEC349 /* TransactionListModel.swift */; };
+		655EAB08220CBF3A00EEC349 /* TransactionDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB07220CBF3A00EEC349 /* TransactionDetailModel.swift */; };
+		655EAB0C220CBFCC00EEC349 /* DecoderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB0B220CBFCC00EEC349 /* DecoderProvider.swift */; };
+		655EAB0F220CC05900EEC349 /* standard.transactionlist in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB0E220CC05900EEC349 /* standard.transactionlist */; };
+		655EAB11220CC23C00EEC349 /* standard.failingtransactionlist in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB10220CC23C00EEC349 /* standard.failingtransactionlist */; };
+		655EAB13220CC47F00EEC349 /* huge.transactionlist in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB12220CC47F00EEC349 /* huge.transactionlist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,13 @@
 		655EAAF2220CBC6100EEC349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionList.storyboard; sourceTree = "<group>"; };
 		655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionDetail.storyboard; sourceTree = "<group>"; };
+		655EAB04220CBD4B00EEC349 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		655EAB05220CBDB500EEC349 /* TransactionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListModel.swift; sourceTree = "<group>"; };
+		655EAB07220CBF3A00EEC349 /* TransactionDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailModel.swift; sourceTree = "<group>"; };
+		655EAB0B220CBFCC00EEC349 /* DecoderProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoderProvider.swift; sourceTree = "<group>"; };
+		655EAB0E220CC05900EEC349 /* standard.transactionlist */ = {isa = PBXFileReference; lastKnownFileType = text; path = standard.transactionlist; sourceTree = "<group>"; };
+		655EAB10220CC23C00EEC349 /* standard.failingtransactionlist */ = {isa = PBXFileReference; lastKnownFileType = text; path = standard.failingtransactionlist; sourceTree = "<group>"; };
+		655EAB12220CC47F00EEC349 /* huge.transactionlist */ = {isa = PBXFileReference; lastKnownFileType = text; path = huge.transactionlist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +94,7 @@
 		655EAAC4220CBC5F00EEC349 = {
 			isa = PBXGroup;
 			children = (
+				655EAB04220CBD4B00EEC349 /* README.md */,
 				655EAACF220CBC5F00EEC349 /* TransactionZ */,
 				655EAAE4220CBC6100EEC349 /* TransactionZTests */,
 				655EAAEF220CBC6100EEC349 /* TransactionZUITests */,
@@ -101,6 +115,7 @@
 		655EAACF220CBC5F00EEC349 /* TransactionZ */ = {
 			isa = PBXGroup;
 			children = (
+				655EAB09220CBFAE00EEC349 /* Protocols */,
 				655EAAFF220CBC8800EEC349 /* TransactionDetail */,
 				655EAAFE220CBC8000EEC349 /* TransactionList */,
 				655EAAD0220CBC5F00EEC349 /* AppDelegate.swift */,
@@ -116,6 +131,7 @@
 		655EAAE4220CBC6100EEC349 /* TransactionZTests */ = {
 			isa = PBXGroup;
 			children = (
+				655EAB0D220CC03100EEC349 /* Scenarios */,
 				655EAAE5220CBC6100EEC349 /* TransactionZTests.swift */,
 				655EAAE7220CBC6100EEC349 /* Info.plist */,
 			);
@@ -135,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */,
+				655EAB05220CBDB500EEC349 /* TransactionListModel.swift */,
 			);
 			path = TransactionList;
 			sourceTree = "<group>";
@@ -143,8 +160,35 @@
 			isa = PBXGroup;
 			children = (
 				655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */,
+				655EAB07220CBF3A00EEC349 /* TransactionDetailModel.swift */,
 			);
 			path = TransactionDetail;
+			sourceTree = "<group>";
+		};
+		655EAB09220CBFAE00EEC349 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				655EAB0A220CBFB600EEC349 /* Data */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		655EAB0A220CBFB600EEC349 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				655EAB0B220CBFCC00EEC349 /* DecoderProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		655EAB0D220CC03100EEC349 /* Scenarios */ = {
+			isa = PBXGroup;
+			children = (
+				655EAB0E220CC05900EEC349 /* standard.transactionlist */,
+				655EAB10220CC23C00EEC349 /* standard.failingtransactionlist */,
+				655EAB12220CC47F00EEC349 /* huge.transactionlist */,
+			);
+			path = Scenarios;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +307,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655EAB11220CC23C00EEC349 /* standard.failingtransactionlist in Resources */,
+				655EAB13220CC47F00EEC349 /* huge.transactionlist in Resources */,
+				655EAB0F220CC05900EEC349 /* standard.transactionlist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +327,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655EAB06220CBDB500EEC349 /* TransactionListModel.swift in Sources */,
+				655EAB08220CBF3A00EEC349 /* TransactionDetailModel.swift in Sources */,
+				655EAB0C220CBFCC00EEC349 /* DecoderProvider.swift in Sources */,
 				655EAAD3220CBC5F00EEC349 /* ViewController.swift in Sources */,
 				655EAAD1220CBC5F00EEC349 /* AppDelegate.swift in Sources */,
 			);

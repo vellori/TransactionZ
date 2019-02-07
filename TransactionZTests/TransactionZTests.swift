@@ -10,24 +10,24 @@ import XCTest
 @testable import TransactionZ
 
 class TransactionZTests: XCTestCase {
-
-    override func setUp() {
-        // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    func testProvidedSuccessScenarios() {
+        guard let paths = Bundle(for: TransactionZTests.self).urls(forResourcesWithExtension: "transactionlist", subdirectory: nil) else {
+            XCTFail("No test cases found")
+            return
+        }
+        DispatchQueue.concurrentPerform(iterations: paths.count) { (n) in
+            XCTAssertNotNil(try! TransactionListModel.decoder().decode(TransactionListModel.self, from: Data(contentsOf: paths[n])))
+        }
     }
-
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-    }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+    
+    func testProvidedFailingScenarios() {
+        guard let paths = Bundle(for: TransactionZTests.self).urls(forResourcesWithExtension: "failingtransactionlist", subdirectory: nil) else {
+            XCTFail("No test cases found")
+            return
+        }
+        DispatchQueue.concurrentPerform(iterations: paths.count) { (n) in
+            XCTAssertNil(try? TransactionListModel.decoder().decode(TransactionListModel.self, from: Data(contentsOf: paths[n])))
         }
     }
 
