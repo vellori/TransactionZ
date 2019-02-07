@@ -22,6 +22,14 @@
 		655EAB0F220CC05900EEC349 /* standard.transactionlist in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB0E220CC05900EEC349 /* standard.transactionlist */; };
 		655EAB11220CC23C00EEC349 /* standard.failingtransactionlist in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB10220CC23C00EEC349 /* standard.failingtransactionlist */; };
 		655EAB13220CC47F00EEC349 /* huge.transactionlist in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB12220CC47F00EEC349 /* huge.transactionlist */; };
+		655EAB15220CC66100EEC349 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB14220CC66100EEC349 /* Result.swift */; };
+		655EAB18220CC73800EEC349 /* Networking+URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB17220CC73800EEC349 /* Networking+URLSession.swift */; };
+		655EAB1A220CC83D00EEC349 /* Cancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB19220CC83D00EEC349 /* Cancellable.swift */; };
+		655EAB1D220CCA9200EEC349 /* ResultTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB1C220CCA9200EEC349 /* ResultTests.swift */; };
+		655EAB1F220CCDCA00EEC349 /* NetworkingResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB1E220CCDCA00EEC349 /* NetworkingResponseTests.swift */; };
+		655EAB21220CCF5500EEC349 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB20220CCF5500EEC349 /* NetworkingService.swift */; };
+		655EAB23220CCF9200EEC349 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB22220CCF9200EEC349 /* Networking.swift */; };
+		655EAB25220CD30900EEC349 /* NetworkingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB24220CD30900EEC349 /* NetworkingServiceTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +72,14 @@
 		655EAB0E220CC05900EEC349 /* standard.transactionlist */ = {isa = PBXFileReference; lastKnownFileType = text; path = standard.transactionlist; sourceTree = "<group>"; };
 		655EAB10220CC23C00EEC349 /* standard.failingtransactionlist */ = {isa = PBXFileReference; lastKnownFileType = text; path = standard.failingtransactionlist; sourceTree = "<group>"; };
 		655EAB12220CC47F00EEC349 /* huge.transactionlist */ = {isa = PBXFileReference; lastKnownFileType = text; path = huge.transactionlist; sourceTree = "<group>"; };
+		655EAB14220CC66100EEC349 /* Result.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Result.swift; sourceTree = "<group>"; };
+		655EAB17220CC73800EEC349 /* Networking+URLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Networking+URLSession.swift"; sourceTree = "<group>"; };
+		655EAB19220CC83D00EEC349 /* Cancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancellable.swift; sourceTree = "<group>"; };
+		655EAB1C220CCA9200EEC349 /* ResultTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultTests.swift; sourceTree = "<group>"; };
+		655EAB1E220CCDCA00EEC349 /* NetworkingResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingResponseTests.swift; sourceTree = "<group>"; };
+		655EAB20220CCF5500EEC349 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
+		655EAB22220CCF9200EEC349 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		655EAB24220CD30900EEC349 /* NetworkingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +131,8 @@
 		655EAACF220CBC5F00EEC349 /* TransactionZ */ = {
 			isa = PBXGroup;
 			children = (
+				655EAB1B220CCA6F00EEC349 /* GeneralPurpose */,
+				655EAB16220CC72400EEC349 /* Network */,
 				655EAB09220CBFAE00EEC349 /* Protocols */,
 				655EAAFF220CBC8800EEC349 /* TransactionDetail */,
 				655EAAFE220CBC8000EEC349 /* TransactionList */,
@@ -134,6 +152,9 @@
 				655EAB0D220CC03100EEC349 /* Scenarios */,
 				655EAAE5220CBC6100EEC349 /* TransactionZTests.swift */,
 				655EAAE7220CBC6100EEC349 /* Info.plist */,
+				655EAB1C220CCA9200EEC349 /* ResultTests.swift */,
+				655EAB1E220CCDCA00EEC349 /* NetworkingResponseTests.swift */,
+				655EAB24220CD30900EEC349 /* NetworkingServiceTests.swift */,
 			);
 			path = TransactionZTests;
 			sourceTree = "<group>";
@@ -168,6 +189,8 @@
 		655EAB09220CBFAE00EEC349 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
+				655EAB19220CC83D00EEC349 /* Cancellable.swift */,
+				655EAB22220CCF9200EEC349 /* Networking.swift */,
 				655EAB0A220CBFB600EEC349 /* Data */,
 			);
 			path = Protocols;
@@ -189,6 +212,23 @@
 				655EAB12220CC47F00EEC349 /* huge.transactionlist */,
 			);
 			path = Scenarios;
+			sourceTree = "<group>";
+		};
+		655EAB16220CC72400EEC349 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				655EAB14220CC66100EEC349 /* Result.swift */,
+				655EAB17220CC73800EEC349 /* Networking+URLSession.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		655EAB1B220CCA6F00EEC349 /* GeneralPurpose */ = {
+			isa = PBXGroup;
+			children = (
+				655EAB20220CCF5500EEC349 /* NetworkingService.swift */,
+			);
+			path = GeneralPurpose;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -327,7 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655EAB15220CC66100EEC349 /* Result.swift in Sources */,
+				655EAB23220CCF9200EEC349 /* Networking.swift in Sources */,
 				655EAB06220CBDB500EEC349 /* TransactionListModel.swift in Sources */,
+				655EAB18220CC73800EEC349 /* Networking+URLSession.swift in Sources */,
+				655EAB21220CCF5500EEC349 /* NetworkingService.swift in Sources */,
+				655EAB1A220CC83D00EEC349 /* Cancellable.swift in Sources */,
 				655EAB08220CBF3A00EEC349 /* TransactionDetailModel.swift in Sources */,
 				655EAB0C220CBFCC00EEC349 /* DecoderProvider.swift in Sources */,
 				655EAAD3220CBC5F00EEC349 /* ViewController.swift in Sources */,
@@ -339,7 +384,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				655EAB1D220CCA9200EEC349 /* ResultTests.swift in Sources */,
+				655EAB1F220CCDCA00EEC349 /* NetworkingResponseTests.swift in Sources */,
 				655EAAE6220CBC6100EEC349 /* TransactionZTests.swift in Sources */,
+				655EAB25220CD30900EEC349 /* NetworkingServiceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
