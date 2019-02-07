@@ -30,6 +30,9 @@
 		655EAB21220CCF5500EEC349 /* NetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB20220CCF5500EEC349 /* NetworkingService.swift */; };
 		655EAB23220CCF9200EEC349 /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB22220CCF9200EEC349 /* Networking.swift */; };
 		655EAB25220CD30900EEC349 /* NetworkingServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB24220CD30900EEC349 /* NetworkingServiceTests.swift */; };
+		655EAB27220CD89200EEC349 /* TransactionListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB26220CD89200EEC349 /* TransactionListController.swift */; };
+		655EAB29220CDD9700EEC349 /* TransactionDisplayableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB28220CDD9700EEC349 /* TransactionDisplayableTests.swift */; };
+		655EAB2B220CE14E00EEC349 /* CurrencyFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB2A220CE14E00EEC349 /* CurrencyFinder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +83,9 @@
 		655EAB20220CCF5500EEC349 /* NetworkingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingService.swift; sourceTree = "<group>"; };
 		655EAB22220CCF9200EEC349 /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
 		655EAB24220CD30900EEC349 /* NetworkingServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingServiceTests.swift; sourceTree = "<group>"; };
+		655EAB26220CD89200EEC349 /* TransactionListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListController.swift; sourceTree = "<group>"; };
+		655EAB28220CDD9700EEC349 /* TransactionDisplayableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDisplayableTests.swift; sourceTree = "<group>"; };
+		655EAB2A220CE14E00EEC349 /* CurrencyFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyFinder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 				655EAB1C220CCA9200EEC349 /* ResultTests.swift */,
 				655EAB1E220CCDCA00EEC349 /* NetworkingResponseTests.swift */,
 				655EAB24220CD30900EEC349 /* NetworkingServiceTests.swift */,
+				655EAB28220CDD9700EEC349 /* TransactionDisplayableTests.swift */,
 			);
 			path = TransactionZTests;
 			sourceTree = "<group>";
@@ -173,6 +180,7 @@
 			children = (
 				655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */,
 				655EAB05220CBDB500EEC349 /* TransactionListModel.swift */,
+				655EAB26220CD89200EEC349 /* TransactionListController.swift */,
 			);
 			path = TransactionList;
 			sourceTree = "<group>";
@@ -227,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				655EAB20220CCF5500EEC349 /* NetworkingService.swift */,
+				655EAB2A220CE14E00EEC349 /* CurrencyFinder.swift */,
 			);
 			path = GeneralPurpose;
 			sourceTree = "<group>";
@@ -373,9 +382,11 @@
 				655EAB18220CC73800EEC349 /* Networking+URLSession.swift in Sources */,
 				655EAB21220CCF5500EEC349 /* NetworkingService.swift in Sources */,
 				655EAB1A220CC83D00EEC349 /* Cancellable.swift in Sources */,
+				655EAB27220CD89200EEC349 /* TransactionListController.swift in Sources */,
 				655EAB08220CBF3A00EEC349 /* TransactionDetailModel.swift in Sources */,
 				655EAB0C220CBFCC00EEC349 /* DecoderProvider.swift in Sources */,
 				655EAAD3220CBC5F00EEC349 /* ViewController.swift in Sources */,
+				655EAB2B220CE14E00EEC349 /* CurrencyFinder.swift in Sources */,
 				655EAAD1220CBC5F00EEC349 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				655EAB1D220CCA9200EEC349 /* ResultTests.swift in Sources */,
+				655EAB29220CDD9700EEC349 /* TransactionDisplayableTests.swift in Sources */,
 				655EAB1F220CCDCA00EEC349 /* NetworkingResponseTests.swift in Sources */,
 				655EAAE6220CBC6100EEC349 /* TransactionZTests.swift in Sources */,
 				655EAB25220CD30900EEC349 /* NetworkingServiceTests.swift in Sources */,

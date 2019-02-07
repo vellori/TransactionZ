@@ -14,4 +14,17 @@ struct TransactionListModel: Decodable, DecoderProvider {
     static func decoder() -> JSONDecoder {
         return TransactionDetailModel.decoder()
     }
+    
+    static var empty: TransactionListModel {
+        return TransactionListModel(data: [])
+    }
+    
+    subscript(index: Int) -> TransactionDetailModel {
+        get {
+            return data[index]
+        }
+        set(newValue) {
+            fatalError()
+        }
+    }
 }
