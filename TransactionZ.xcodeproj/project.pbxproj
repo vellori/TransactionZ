@@ -14,6 +14,8 @@
 		655EAADB220CBC6000EEC349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAAD9220CBC6000EEC349 /* LaunchScreen.storyboard */; };
 		655EAAE6220CBC6100EEC349 /* TransactionZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAAE5220CBC6100EEC349 /* TransactionZTests.swift */; };
 		655EAAF1220CBC6100EEC349 /* TransactionZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAAF0220CBC6100EEC349 /* TransactionZUITests.swift */; };
+		655EAB01220CBC9E00EEC349 /* TransactionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */; };
+		655EAB03220CBCB300EEC349 /* TransactionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		655EAAEC220CBC6100EEC349 /* TransactionZUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TransactionZUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		655EAAF0220CBC6100EEC349 /* TransactionZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionZUITests.swift; sourceTree = "<group>"; };
 		655EAAF2220CBC6100EEC349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionList.storyboard; sourceTree = "<group>"; };
+		655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionDetail.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,8 @@
 		655EAACF220CBC5F00EEC349 /* TransactionZ */ = {
 			isa = PBXGroup;
 			children = (
+				655EAAFF220CBC8800EEC349 /* TransactionDetail */,
+				655EAAFE220CBC8000EEC349 /* TransactionList */,
 				655EAAD0220CBC5F00EEC349 /* AppDelegate.swift */,
 				655EAAD2220CBC5F00EEC349 /* ViewController.swift */,
 				655EAAD4220CBC5F00EEC349 /* Main.storyboard */,
@@ -123,6 +129,22 @@
 				655EAAF2220CBC6100EEC349 /* Info.plist */,
 			);
 			path = TransactionZUITests;
+			sourceTree = "<group>";
+		};
+		655EAAFE220CBC8000EEC349 /* TransactionList */ = {
+			isa = PBXGroup;
+			children = (
+				655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */,
+			);
+			path = TransactionList;
+			sourceTree = "<group>";
+		};
+		655EAAFF220CBC8800EEC349 /* TransactionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */,
+			);
+			path = TransactionDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,6 +254,8 @@
 				655EAADB220CBC6000EEC349 /* LaunchScreen.storyboard in Resources */,
 				655EAAD8220CBC6000EEC349 /* Assets.xcassets in Resources */,
 				655EAAD6220CBC5F00EEC349 /* Main.storyboard in Resources */,
+				655EAB03220CBCB300EEC349 /* TransactionDetail.storyboard in Resources */,
+				655EAB01220CBC9E00EEC349 /* TransactionList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
