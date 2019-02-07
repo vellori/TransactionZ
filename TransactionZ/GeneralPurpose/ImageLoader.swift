@@ -8,14 +8,19 @@
 
 import Foundation
 import UIKit
+import ObjectiveC
 
 class ImageLoader {
-    static var networkingService: Networking = URLSession.shared
-    static var references = [UIImageView: Cancellable]()
-    static func get(url: URL, in imageView: UIImageView) {
-        references[imageView]?.cancel()
+    static let identifier = "imageLoad"
+    var task: Cancellable?
+    
+    deinit {
+        task?.cancel()
+    }
+    
+    func get(url: URL, in imageView: UIImageView, networking: Networking = URLSession.shared) {
         let request = URLRequest(url: url)
-        references[imageView] = networkingService.perform(request: request, callback: { (response) in
+        task = networking.perform(request: request, callback: { (response) in
             guard response.error == nil,
                 let data = response.data else {
                     return
@@ -23,8 +28,8 @@ class ImageLoader {
             let image = UIImage(data: data)
             DispatchQueue.main.async {
                 imageView.image = image
-                references[imageView] = nil
             }
         })
+        objc_setAssociatedObject(self, ImageLoader.identifier, self, .OBJC_ASSOCIATION_RETAIN)
     }
 }
