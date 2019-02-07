@@ -17,7 +17,10 @@ class TransactionZTests: XCTestCase {
             return
         }
         DispatchQueue.concurrentPerform(iterations: paths.count) { (n) in
-            XCTAssertNotNil(try! TransactionListModel.decoder().decode(TransactionListModel.self, from: Data(contentsOf: paths[n])))
+            let result = try! TransactionListModel.decoder().decode(TransactionListModel.self, from: Data(contentsOf: paths[n]))
+            XCTAssertNotNil(result)
+            XCTAssertNotNil(result[0])
+            XCTAssertNil(result[Int.max])
         }
     }
     

@@ -15,16 +15,31 @@ struct TransactionListModel: Decodable, DecoderProvider {
         return TransactionDetailModel.decoder()
     }
     
-    static var empty: TransactionListModel {
-        return TransactionListModel(data: [])
-    }
-    
-    subscript(index: Int) -> TransactionDetailModel {
+    subscript(index: Int) -> TransactionDetailModel? {
         get {
+            guard index < data.count else {
+                return nil
+            }
             return data[index]
         }
         set(newValue) {
             fatalError()
         }
     }
+}
+
+extension TransactionListModel: Collection {
+    func index(after i: Int) -> Int {
+        return i + 1
+    }
+    
+    var startIndex: Int {
+        return 0
+    }
+    
+    var endIndex: Int {
+        return data.count - 1
+    }
+    
+    
 }
