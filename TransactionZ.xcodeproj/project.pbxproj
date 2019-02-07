@@ -15,7 +15,6 @@
 		655EAAE6220CBC6100EEC349 /* TransactionZTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAAE5220CBC6100EEC349 /* TransactionZTests.swift */; };
 		655EAAF1220CBC6100EEC349 /* TransactionZUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAAF0220CBC6100EEC349 /* TransactionZUITests.swift */; };
 		655EAB01220CBC9E00EEC349 /* TransactionList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */; };
-		655EAB03220CBCB300EEC349 /* TransactionDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */; };
 		655EAB06220CBDB500EEC349 /* TransactionListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB05220CBDB500EEC349 /* TransactionListModel.swift */; };
 		655EAB08220CBF3A00EEC349 /* TransactionDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB07220CBF3A00EEC349 /* TransactionDetailModel.swift */; };
 		655EAB0C220CBFCC00EEC349 /* DecoderProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAB0B220CBFCC00EEC349 /* DecoderProvider.swift */; };
@@ -68,7 +67,6 @@
 		655EAAF0220CBC6100EEC349 /* TransactionZUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionZUITests.swift; sourceTree = "<group>"; };
 		655EAAF2220CBC6100EEC349 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		655EAB00220CBC9E00EEC349 /* TransactionList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionList.storyboard; sourceTree = "<group>"; };
-		655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TransactionDetail.storyboard; sourceTree = "<group>"; };
 		655EAB04220CBD4B00EEC349 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		655EAB05220CBDB500EEC349 /* TransactionListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListModel.swift; sourceTree = "<group>"; };
 		655EAB07220CBF3A00EEC349 /* TransactionDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionDetailModel.swift; sourceTree = "<group>"; };
@@ -190,7 +188,6 @@
 		655EAAFF220CBC8800EEC349 /* TransactionDetail */ = {
 			isa = PBXGroup;
 			children = (
-				655EAB02220CBCB300EEC349 /* TransactionDetail.storyboard */,
 				655EAB07220CBF3A00EEC349 /* TransactionDetailModel.swift */,
 			);
 			path = TransactionDetail;
@@ -350,7 +347,6 @@
 				655EAADB220CBC6000EEC349 /* LaunchScreen.storyboard in Resources */,
 				655EAAD8220CBC6000EEC349 /* Assets.xcassets in Resources */,
 				655EAAD6220CBC5F00EEC349 /* Main.storyboard in Resources */,
-				655EAB03220CBCB300EEC349 /* TransactionDetail.storyboard in Resources */,
 				655EAB01220CBC9E00EEC349 /* TransactionList.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

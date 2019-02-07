@@ -76,7 +76,7 @@ extension TransactionDisplayable {
     func apply(transaction: TransactionDetailModel) {
         descriptionLabel?.text = transaction.description
         amountLabel?.text = transaction.amount.description
-        ImageLoader.get(url: transaction.product.icon, in: productImageView)
+        ImageLoader().get(url: transaction.product.icon, in: productImageView)
     }
 }
 

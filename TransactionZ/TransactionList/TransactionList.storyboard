@@ -62,7 +62,6 @@
                                     <outlet property="amountLabel" destination="d1T-jC-vOi" id="k7Z-CI-nc8"/>
                                     <outlet property="descriptionLabel" destination="Djg-sH-pEr" id="lH2-fx-80x"/>
                                     <outlet property="productImageView" destination="l3u-aQ-6Hb" id="uqb-6D-9bV"/>
-                                    <segue destination="lrc-zw-7pp" kind="show" id="SZ0-C1-NfP"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -81,14 +80,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hf-zk-XHN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="104.8" y="183.95802098950526"/>
-        </scene>
-        <!--TransactionDetail-->
-        <scene sceneID="pVr-bA-FJ9">
-            <objects>
-                <viewControllerPlaceholder storyboardName="TransactionDetail" id="lrc-zw-7pp" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tSY-vC-qcT" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="770" y="64"/>
         </scene>
     </scenes>
 </document>
