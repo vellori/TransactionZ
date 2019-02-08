@@ -67,6 +67,11 @@ class TransactionCell: UITableViewCell, TransactionDisplayable {
     @IBOutlet var descriptionLabel: UILabel!
     @IBOutlet var amountLabel: UILabel!
     @IBOutlet var productImageView: UIImageView!
+    
+    override func prepareForReuse() {
+        productImageView.image = nil
+        // As per Apple reccomendation I'm not cleaning the label because those I'm sure I'll overwrite them during the update, while the image might not be available
+    }
 }
 
 protocol TransactionDisplayable {

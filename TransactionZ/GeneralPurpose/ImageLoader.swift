@@ -35,7 +35,6 @@ class ImageLoader {
     func get(url: URL, in imageView: UIImageView) {
         if let image = imageFromCache(url: url) {
             imageView.image = image
-            print("Cache")
             return
         }
         let request = URLRequest(url: url)
