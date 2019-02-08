@@ -16,6 +16,8 @@ class TransactionListController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.estimatedRowHeight = 80
+        tableView.rowHeight = UITableView.automaticDimension
         start()
     }
     
@@ -32,10 +34,11 @@ class TransactionListController: UITableViewController {
             default:
                 () //whatever we have to do in an error situation which is not clear in the code challenge
             }
+            self?.tableView.reloadData()
+            
             if control?.isRefreshing == true {
                 control?.endRefreshing()
             }
-            self?.tableView.reloadData()
         }
     }
 }
