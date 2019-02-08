@@ -13,7 +13,7 @@ class TransactionDisplayableTests: XCTestCase {
     func testSimpleDongTransaction() {
         let transaction = TransactionDetailModel.with(amount: Amount(value: 12.3, currency_iso: "VND"))
         let testUI = TestUI()
-        testUI.apply(transaction: transaction)
+        testUI.apply(transaction: transaction, imageLoader: ImageLoader(networking: MockNetworking()))
         XCTAssertEqual(testUI.amountLabel?.text, "₫12.30")
         XCTAssertEqual(testUI.descriptionLabel?.text, "desc")
     }
@@ -21,7 +21,7 @@ class TransactionDisplayableTests: XCTestCase {
     func testSimpleDollarTransaction() {
         let transaction = TransactionDetailModel.with(amount: Amount(value: 12.3, currency_iso: "USD"))
         let testUI = TestUI()
-        testUI.apply(transaction: transaction)
+        testUI.apply(transaction: transaction, imageLoader: ImageLoader(networking: MockNetworking()))
         XCTAssertEqual(testUI.amountLabel?.text, "$12.30")
         XCTAssertEqual(testUI.descriptionLabel?.text, "desc")
     }

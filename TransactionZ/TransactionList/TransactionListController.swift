@@ -76,10 +76,10 @@ protocol TransactionDisplayable {
 }
 
 extension TransactionDisplayable {
-    func apply(transaction: TransactionDetailModel) {
+    func apply(transaction: TransactionDetailModel, imageLoader: ImageLoader = ImageLoader()) {
         descriptionLabel?.text = transaction.description
         amountLabel?.text = transaction.amount.description
-        ImageLoader().get(url: transaction.product.icon, in: productImageView)
+        imageLoader.get(url: transaction.product.icon, in: productImageView)
     }
 }
 

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		655EAAD1220CBC5F00EEC349 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAAD0220CBC5F00EEC349 /* AppDelegate.swift */; };
-		655EAAD3220CBC5F00EEC349 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 655EAAD2220CBC5F00EEC349 /* ViewController.swift */; };
 		655EAAD6220CBC5F00EEC349 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAAD4220CBC5F00EEC349 /* Main.storyboard */; };
 		655EAAD8220CBC6000EEC349 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 655EAAD7220CBC6000EEC349 /* Assets.xcassets */; };
 		655EAADB220CBC6000EEC349 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 655EAAD9220CBC6000EEC349 /* LaunchScreen.storyboard */; };
@@ -55,7 +54,6 @@
 /* Begin PBXFileReference section */
 		655EAACD220CBC5F00EEC349 /* TransactionZ.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TransactionZ.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		655EAAD0220CBC5F00EEC349 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		655EAAD2220CBC5F00EEC349 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		655EAAD5220CBC5F00EEC349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		655EAAD7220CBC6000EEC349 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		655EAADA220CBC6000EEC349 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -143,7 +141,6 @@
 				655EAAFF220CBC8800EEC349 /* TransactionDetail */,
 				655EAAFE220CBC8000EEC349 /* TransactionList */,
 				655EAAD0220CBC5F00EEC349 /* AppDelegate.swift */,
-				655EAAD2220CBC5F00EEC349 /* ViewController.swift */,
 				655EAAD4220CBC5F00EEC349 /* Main.storyboard */,
 				655EAAD7220CBC6000EEC349 /* Assets.xcassets */,
 				655EAAD9220CBC6000EEC349 /* LaunchScreen.storyboard */,
@@ -384,7 +381,6 @@
 				655EAB27220CD89200EEC349 /* TransactionListController.swift in Sources */,
 				655EAB08220CBF3A00EEC349 /* TransactionDetailModel.swift in Sources */,
 				655EAB0C220CBFCC00EEC349 /* DecoderProvider.swift in Sources */,
-				655EAAD3220CBC5F00EEC349 /* ViewController.swift in Sources */,
 				655EAB2B220CE14E00EEC349 /* CurrencyFinder.swift in Sources */,
 				655EAAD1220CBC5F00EEC349 /* AppDelegate.swift in Sources */,
 				655EAB31220CF01400EEC349 /* ImageLoader.swift in Sources */,
